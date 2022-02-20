@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+* {
+  font-family: "Do Hyeon", sans-serif;
+}
+body {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-color: black;
+}
+.hidden {
+  display: none !important;
+}
+
+.today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 60px;
+  height: 400px;
+  text-shadow: 0 0 10px orange, 0 0 40px orange, 0 0 80px orange;
+}
+.today h3 {
+  font-size: 70px;
+  margin: 0px;
+}
+.today h2 {
+  margin: 50px;
+}
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#login-form :first-child {
+  height: 80px;
+  width: 820px;
+  text-align: center;
+  font-size: 55px;
+  color: lightcyan !important;
+  background-color: rgba(0, 220, 255, 0.2);
+  border: 10px solid lightcyan;
+  box-shadow: 0 0 20px cyan;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  animation: heartBeat 3s linear infinite;
+}
+#login-form ::placeholder {
+  color: lightcyan;
+  text-shadow: 0 0 10px cyan, 0 0 40px cyan, 0 0 80px cyan;
+  font-size: 55px;
+  text-align: center;
+}
+#login-form :first-child:focus {
+  outline: none;
+  border-color: rgba(224, 255, 255, 0.8);
+}
+.login {
+  width: 120px;
+  height: 65px;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: rgba(0, 220, 255, 0.2);
+  border: 4px solid lightcyan;
+  box-shadow: 0 0 20px cyan;
+  color: lightcyan;
+  text-shadow: 0 0 20px cyan;
+}
+
+#greeting {
+  font-size: 85px;
+  text-align: center;
+  color: lightcyan;
+  text-shadow: 0 0 23px#D070FB;
+  animation: fadein 2s;
+  animation: text-flicker 3s linear infinite;
+}
+#quote {
+  color: lightgoldenrodyellow;
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 80px;
+  text-shadow: 0 0 10px #00245d, 0 0 40px #00245d, 0 0 80px #00245d;
+}
+#quote span:last-child {
+  font-size: 30px;
+}
+.todo_list {
+  height: 280px;
+  width: 240px;
+  position: relative;
+  top: -400px;
+  left: 20px;
+}
+#todo-form > input {
+  height: 50px;
+  width: 450px;
+  background-color: #1e181e;
+  color: #fff !important;
+  font-size: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px #eb212e,
+    0 0 25px #eb212e;
+}
+#todo-form ::placeholder {
+  color: #fff;
+  font-size: 30px;
+}
+#todo-list {
+  font-size: 25px;
+}
+#todo-list button {
+  color: #fff;
+  background-color: #1e181e;
+  border: 2px solid #eb212e;
+  box-shadow: 0 0 10px #eb212e, 0 0 40px #eb212e, 0 0 80px #eb212e;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 14px;
+}
+#weather {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+  margin-top: 30px;
+  color: white;
+  text-shadow: 0 0 10px #0fa, 0 0 40px #0fa, 0 0 80px #0fa;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: #003049;
+    transform: none;
+  }
+  50% {
+    color: #003049;
+    transform: scale(1.1);
+  }
+  100% {
+    color: #003049;
+    transform: none;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px#D070FB;
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px#D070FB;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+
+  77% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px #d070fb;
+  }
+}
